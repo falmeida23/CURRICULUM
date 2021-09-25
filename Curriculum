@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+    <title>Curriculum Vitae de Alejandro González</title>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/803713988382294056/860669280026230784/PNG_image_22.PNG"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #youshallnotpass {
+            display: block;
+            position: fixed;
+            width: 100%; 
+            height: 100%; 
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.9); 
+            z-index: 2; 
+            cursor: pointer; 
+        }
+
+        #phonewrn {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width:100%;
+            height:auto;
+            display:flex;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            #youshallnotpass {
+                display: none;
+            }
+        }
+
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+            scroll-behavior: smooth;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -100; 
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg-image {
+            background-image: url(https://cdn.discordapp.com/attachments/803713988382294056/860931032333156392/IMG-0631.JPG);
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            height: 99%;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin:0%;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .bg-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .desliza:hover {
+            animation-name: engl;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .desliza {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            margin-bottom: 100px;
+            opacity: 0.5;
+            animation-name: unengl;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            
+        }
+
+        .masabajo {
+            position: absolute;
+            left: 0%;
+            transform: translate(-50%, -100%);
+            margin-bottom: 100px;
+            margin-left:150px;
+            
+        }
+
+        .about {
+            margin:0 auto;
+            margin-top: 200px;
+            margin-left:50px;
+        }
+
+        .skills {
+            margin:0 auto;
+            margin-top: 650px;
+        }
+
+        .Idiomas {
+            margin:0 auto;
+            margin-top: 65px;
+        }
+
+
+
+        #Header {
+            font-family: 'Dela Gothic One';
+            font-size:4vw;
+            color: white;
+            text-align: center;
+        }
+
+        #carpres {
+            max-width:100%;
+            height:auto;
+            position: absolute;
+            left: 50%;
+            top: 7%;
+            transform: translate(-50%, -50%);
+        }
+
+        #faceabt {
+            max-width:100%;
+            height:auto;
+            margin-top:-50px;
+        }
+
+        #Idio {
+            max-width:100%;
+            height:auto;
+        }
+
+        #Opin {
+            max-width:100%;
+            height:auto;
+            margin: 30px;
+        }
+
+        .links {
+            background-color: black;
+            padding-bottom:0.5%;
+        }
+
+        .aboutme {
+            position: absolute;
+            text-align: left;
+            margin-left: 400px;
+        }
+
+        .imgabout {
+            float:left;
+        }
+
+        .design {
+            display:inline-block;
+            margin:10px;
+        }
+
+        .grades {
+            margin-left:700px;
+            margin-top:-115px;
+        }
+
+        .lang {
+            margin-left:1050px;
+            margin-top:-105px;
+        }
+
+        .proyectos {
+            margin: auto;
+            width: 50%;
+        }
+
+        .educa {
+            margin-left:300px;
+            margin-right:200px;	
+        }
+
+        .opinion {
+            margin-left:200px;
+            margin-right:200px;
+        }
+
+        #Namer {
+            font-family: 'Raleway';
+            text-align: center;
+            color:white;
+            font-size:2vw;
+        }
+
+        #baja {
+            font-family: 'Raleway';
+            text-align: center;
+            opacity:0;
+            animation-name: baja;
+            animation-delay:2s;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+            float:right;
+            color:white;
+        }
+
+        #flecha {
+            float: left;
+            margin-left:50%;
+            margin-bottom:10%;
+            opacity:1;
+            animation-name:Mov1;
+            animation-duration:5s;
+            animation-delay:0.5s;
+            animation-iteration-count:infinite;
+            position: relative;
+        }
+
+        
+        #masbaja {
+            font-family: 'Raleway';
+            text-align: center;
+            opacity:0;
+            animation-name: baja;
+            animation-delay:6s;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+            float:center;
+        }
+
+        #masflecha {
+            float: center;
+            margin-left:90px;
+            margin-top:15px;
+            opacity:0;
+            animation-name: baja;
+            animation-delay: 6s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        #sobre {
+            font-family: 'Dela Gothic One';
+            font-size:30px;
+            text-align:center;
+            color:black;
+        }
+
+        #sobrem {
+            font-family: 'Dela Gothic One';
+            font-size:2vw;
+            color:black;
+        }
+
+        #WRO {
+            font-family: 'Raleway';
+            font-size:1.5vw;
+            color:black;
+            margin-left:325px;
+        }
+
+        #Explainwro {
+            font-family: 'Raleway';
+            font-size:1.3vw;
+            color:black;
+            margin-left:325px;
+            margin-right:15%;
+        }
+
+        .title1 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 200px;
+        }
+
+        .img1 {
+            float:left;
+            margin-left:200px;
+        }
+
+        #Esque {
+            font-family: 'Raleway';
+            font-size:1.5vw;
+            color:black;
+            margin-left:325px;
+        }
+
+        #Explainesque {
+            font-family: 'Raleway';
+            font-size:1.3vw;
+            color:black;
+            margin-left:325px;
+            margin-right:15%;
+        }
+
+        .title2 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 200px;
+            margin-top: 300px;
+        }
+
+        .img2 {
+            float:left;
+            margin-left: -250px;
+            margin-top: 300px;
+        }
+
+        #Riicon {
+            font-family: 'Raleway';
+            font-size:1.5vw;
+            color:black;
+            margin-left:325px;
+        }
+
+        #Explainriicon {
+            font-family: 'Raleway';
+            font-size:1.3vw;
+            color:black;
+            margin-left:325px;
+            margin-right:15%;
+        }
+
+        .title4 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 200px;
+            margin-top: 900px;
+        }
+
+        .img4 {
+            float:left;
+            margin-left: -250px;
+            margin-top: 900px;
+        }
+
+        #masca {
+            font-family: 'Raleway';
+            font-size: 190 px;
+            color:black;
+            margin-left:190px;
+        }
+
+        #Explainmasca {
+            font-family: 'Raleway';
+            font-size: 190 px;
+            color:black;
+            margin-left:190px;
+            margin-right:10%;
+        }
+
+        .loca1 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 0px;
+        }
+
+        .imgloca1 {
+            float:left;
+            margin-left: 50px;
+        }
+
+        #dsv {
+            font-family: 'Raleway';
+            font-size: 190 px;
+            color:black;
+            margin-left:190px;
+        }
+
+        #Explaindsv {
+            font-family: 'Raleway';
+            
+            color:black;
+            margin-left:190px;
+            margin-right:15%;
+        }
+
+        .loca2 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 0px;
+            margin-top: 300px;
+        }
+
+        .imgloca2 {
+            float:left;
+            margin-left: -100px;
+            margin-top: 300px;
+        }
+
+        #droide {
+            font-family: 'Raleway';
+            font-size: 190 px;
+            color:black;
+            margin-left:190px;
+        }
+
+        #Explaindroide {
+            font-family: 'Raleway';
+            font-size: 190 px;
+            color:black;
+            margin-left:190px;
+            margin-right:15%;
+        }
+
+        .loca3 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 0px;
+            margin-top: 150px;
+        }
+
+        .imgloca3 {
+            float:left;
+            margin-left: -100px;
+            margin-top: 150px;
+        }
+        
+        #Dolicon {
+            font-family: 'Raleway';
+            font-size:1.5vw;
+            color:black;
+            margin-left:325px;
+        }
+
+        #Explaindolicon {
+            font-family: 'Raleway';
+            font-size:1.3vw;
+            color:black;
+            margin-left:325px;
+            margin-right:15%;
+        }
+
+        .title3 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 200px;
+            margin-top: 600px;
+        }
+
+        .img3 {
+            float:left;
+            margin-left: -250px;
+            margin-top: 600px;
+        }
+
+        #Clubmat {
+            font-family: 'Raleway';
+            font-size:1.5vw;
+            color:black;
+            margin-left:325px;
+        }
+
+        #Explainclubmat{
+            font-family: 'Raleway';
+            font-size:1.3vw;
+            color:black;
+            margin-left:325px;
+            margin-right:15%;
+        }
+
+        .title5 {
+            position: absolute;
+            text-align: left;
+            float:right;
+            margin-left: 200px;
+            margin-top: 1200px;
+        }
+
+        .img5 {
+            float:left;
+            margin-left: -250px;
+            margin-top: 1200px;
+        }
+
+        #idiomas {
+            font-family: 'Dela Gothic One';
+            text-align:center;
+            font-size: 100 px;
+            color:black;
+        }
+
+        #proyreal {
+            font-family: 'Dela Gothic One';
+            font-size: 100 px;
+            color:black;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+
+        #Educa {
+            font-family: 'Dela Gothic One';
+            font-size: 100 px;
+            color:black;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 1550px;
+            margin-bottom: 50px;
+            
+        }
+
+        #Opinion {
+            font-family: 'Dela Gothic One';
+            font-size: 100 px;
+            color:black;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 400px;
+            margin-bottom: 50px;
+            
+        }
+
+        #info {
+            font-family:Raleway;
+            font-size:1.3vw;
+            color:black;
+            margin-right:50px;
+        }
+
+        #coding {
+            max-width:90%;
+            height:auto;
+            margin-top: 30px;
+        }
+
+        #design {
+            float:left;
+            margin-top: 30px;
+        }
+
+        #lovemsg {
+            font-family:Raleway;
+            font-size:15px;
+            color:white;
+            text-align: center;
+        }
+
+        @keyframes baja {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes Mov1 {          
+            0%   {left:0px; top:0px;}
+            50% {left:0px; top:-2px;}
+            100%  {left:0px; top:0px;}
+        } 
+
+        #prsany {
+            text-align: center;
+            font-family: Raleway;
+            margin-top: 12%;
+            font-size: 25px;
+        }
+
+        #overlay {
+            position: fixed;
+            width: 100%; 
+            height: 100%; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.9); 
+            z-index: 1; 
+            cursor: pointer; 
+        }
+
+        #qrpdf {
+            position: absolute;
+            left: 7%;
+            top: 12%;
+            transform: translate(-50%, -50%);
+            float:left;
+            margin:30px;
+        }
+
+        #Eng:hover{
+            animation-name: engl;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes engl {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes unengl {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        #Eng {
+            position: absolute;
+            left: 90%;
+            top: 4%;
+            transform: translate(-50%, -50%);
+            float:left;
+            margin:30px;
+            opacity:0.5;
+            animation-name: unengl;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        #Axlogo {
+            position: absolute;
+            left: 90%;
+            top: 88%;
+            transform: translate(-50%, -50%);
+            float:right;
+            margin:30px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #popupBody{
+            width: 70%;
+            padding: 5%;
+            border-radius: 25px;
+            box-shadow: 0 0 5px #CCC;
+            background: #FFF;
+            position: relative;
+            transition: all 5s ease-in-out;
+            margin: 5% auto;    
+        }
+
+        #cerrar{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        #knowme {
+            float:left;
+        }
+
+    </style>
+
+    <body>
+
+        <!--Código programado completamente por Alejandro González-->
+
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:ital@1&family=Raleway&display=swap" rel="stylesheet">
+
+        <a href="https://cdn.discordapp.com/attachments/803713988382294056/860820182569713664/Alejandro_Gonzalez_de_la_Santa_Cruz_-_Curriculum_Vitae_PDF_version_2.pdf">
+            <div id="youshallnotpass">
+                <img id="phonewrn" src="https://cdn.discordapp.com/attachments/803713988382294056/862263545235505212/PNG_image_38.PNG" height="230" width="700" class="center" >
+            </div>
+        </a>
+
+        <a href="#popup">
+        <div class="bg-image"></div>
+        </a>
+
+        <div id="popup" class="overlay">
+            <div id="popupBody">
+                <h2 id="sobrem">Presentación:</h2>
+                <a id="cerrar" href="#">&times;</a>
+                <div class="popupContent">
+                    <p>Breve presentación personal.</p>
+                </br></br></br>
+                    <video width="720" height="350" controls muted loop class="popupBody">
+                        <source src="https://cdn.discordapp.com/attachments/803713988382294056/862136310704373760/final_60e4cf6466a62600ad7d3862_236641_3.mp4" type="video/mp4">
+                        Hmmm.... Que raro.... Parece que tu navegador no soporta vídeo, lo que significa que no lo has actualizado en ***bastante*** tiempo. ¿¡A que esperas!?
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="https://cdn.discordapp.com/attachments/803713988382294056/860795638623371304/2021-07-03_09-55-36_Trim_online-video-cutter.com_2.mp4" type="video/mp4">
+            Hmmm.... Que raro.... Parece que tu navegador no soporta vídeo, lo que significa que no lo has actualizado en ***bastante*** tiempo. ¿¡A que esperas!?
+        </video>
+
+        <a href="https://cdn.discordapp.com/attachments/803713988382294056/860820182569713664/Alejandro_Gonzalez_de_la_Santa_Cruz_-_Curriculum_Vitae_PDF_version_2.pdf">
+            <div class="pdfqr">
+                <img id="qrpdf" src="https://cdn.discordapp.com/attachments/803713988382294056/860662254194130974/unnamed_2.png" height="200" width="160">
+            </div>
+        </a>
+
+        <a href="https://enlishdear.github.io">
+            <div class="eng">
+                <img id="Eng" src="https://cdn.discordapp.com/attachments/803713988382294056/861031683423469608/PNG_image_34.PNG" height="55" width="80">
+            </div>
+        </a>
+
+        <div class="axlogo">
+            <img id="Axlogo" src="https://cdn.discordapp.com/attachments/803713988382294056/860672813865500712/PNG_image_24.PNG" height="50" width="55">
+        </div>
+
+        <a href="#popup">
+        <div>
+            <img id="carpres" src="https://cdn.discordapp.com/attachments/803713988382294056/861222894243414026/unnamed_5.png" height="40" width="450">
+        </div>
+        </a>
+
+        <a href="#popup">
+        <div  class="bg-text">
+
+            <div data-aos="zoom-out" data-aos-delay="500">
+                <h1 id="Header"> Curriculum Vitae </h1>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="1000">
+                <h2 id="Namer"> Alejandro González de la Santa Cruz</h2>
+            </div>
+        </div>
+        </a>
+        
+
+
+        <a href="#faceabt">
+            <div class="desliza">
+                
+                <p id="baja"> <b>Baja para más información...</b> </p>
+                <img id="flecha" src="https://cdn.discordapp.com/attachments/803713988382294056/860161675016667136/PNG_image_2.PNG" height="25" width="40" >
+                
+            </div>
+        </a>
+        
+        <div class="about">
+            <div data-aos="fade-right" class="aboutme">
+                <h1 id="sobrem"> Sobre mí: </h1>
+                <p align="justify" id="info">
+                     Alumno del colegio <a href="https://www.colegiomascamarena.es/">Mas Camarena</a> desde los 3 años, actualmente he finalizado Secundaria con excelentes resultados. Apasionado por la tecnología y el diseño, con un buen ojo para los detalles y el minimalismo. Participante en diversos proyectos de código libre. Con casi 13 años de aprendizaje de la lengua inglesa, he adquirido los conocimientos necesarios para participar de forma activa en conversaciones con personas de lengua inglesa, así como dominar el Español y el Valenciano como lengua materna. Además, gracias a 6 años de experiencia con la lengua alemana, y 4 con la francesa, puedo mantener conversaciones en ambos idiomas. Así  mismo, he adquirido conocimientos de programación en Python y HTML/CSS, permitiéndome crear proyectos y trabajos únicos y originales, lo cual se demuestra con unas excelentes calificaciones a lo largo de toda la secundaria.
+                </p>
+            </div>
+
+           
+
+            <div data-aos="fade-left" class="imgabout">
+                <img id="faceabt" src="https://cdn.discordapp.com/attachments/803713988382294056/860807930482786324/PNG_image_26.PNG" height="400" width="350">
+            </div>
+        </div>
+
+        <div data-aos="fade-up" class="skills">
+            <h1 id="sobre"> Destrezas: </h1>
+            <div data-aos="fade-down" class="code">
+                <img id="coding" src="https://cdn.discordapp.com/attachments/803713988382294056/860646767669280818/unnamed_1.png" height="120" width="1400" class="center">  
+            </div>
+
+        </div>
+</br></br></br></br></br>
+<div data-aos="fade-up" class="Idiomas">
+    <h1 id="idiomas">Idiomas:</h1>
+    <div data-aos="fade-down" class="idio">
+        <img id="Idio" src="https://cdn.discordapp.com/attachments/803713988382294056/860934655599181844/unnamed_4.png" height="73" width="1400" class="center">
+    </div>
+</div>  
+
+</br></br></br></br></br>
+
+<div  data-aos="fade-up" id="proyectos">
+    <h1 id="proyreal">Proyectos realizados:</h1>
+    <div class="a1">
+        <div data-aos="fade-right" class="title1">
+            <p id="WRO"><b>Competición en la WRO:</b></p>
+            <p align="justify" id="Explainwro">Entre 2015 y 2018, participé en diversas competiciones de robótica (tales como la <a href="https://wro-association.org/home">World Robot Olympiad</a>", o WRO), tanto a nivel regional como nacional, en las cuales adquirí habilidades de liderazgo, así como conocimientos de programación y mecánica. Además aumenté mis capacidades sociales, al trabajar con un equipo de personas para conseguir un objetivo común.</p>
+        </div>
+        <div data-aos="fade-left" class="img1">
+            <img src="https://cdn.discordapp.com/attachments/803713988382294056/860649680752476200/PNG_image_18.PNG" height="250" width="250">
+        </div>
+    </div>	
+
+    <div class="a2">
+        <div data-aos="fade-right" class="title2">
+            <p id="Esque"><b>Creación y mantenimiento de una página web:</b></p>
+            <p align="justify" id="Explainesque">Durante todo el año de 2019, actualizé y mantuve una <a href="https://esquemasca.wixsite.com/inicio">página web educativa</a> para mis compañeros de 3 ESO, con el propósito de dotarles de nuevas maneras de estudio para los exámenes. Esto me permitió mejorar mis conocimientos de diseño, al diseñar una página web, así como todo su contenido.</p>
+        </div>
+        <div data-aos="fade-left" class="img2">
+            <img src="https://cdn.discordapp.com/attachments/803713988382294056/860649037523058718/PNG_image_12.PNG" height="250" width="250">
+        </div>
+    </div>
+
+    <div class="a3">
+        <div data-aos="fade-right" class="title3">
+            <p id="Riicon"><b>Traducción de una página web:</b></p>
+            <p align="justify" id="Explainriicon">Entre Mayo y agosto de 2020, traduje del Inglés al Catalán la página web del programa <a href="https://rc24.xyz/">RiiConnect24</a>, para que las personas sin amplios conocimientos de Inglés pudieran utilizarla sin ningún tipo de contratiempo. Esto, a su vez, me permitió obtener experiencia de traducción de contenido, mejorando mi nivel de Inglés considerablemente.</p>
+        </div>
+        <div data-aos="fade-left" class="img3">
+            <img src="https://cdn.discordapp.com/attachments/803713988382294056/860649026633072690/PNG_image_13.PNG" height="250" width="250">
+        </div>
+    </div>
+
+    <div class="a4">
+        <div data-aos="fade-right" class="title4">
+            <p id="Dolicon"><b>Diseño de iconos para un programa informático:</b></p>
+            <p align="justify" id="Explaindolicon">Durante 2021, diseñé iconos para el popular emulador de Wii y Gamecube, <a href="https://es.dolphin-emu.org/">Dolphin</a>. Esto me permitió profundizar mis conocimientos de diseño y participar en un gran proyectos colaborativo, con el objetivo de ofrecer una experiencia mejor con la aplicación y todas sus funciones para todos los usuarios de esta.</p>
+        </div>
+        <div data-aos="fade-left" class="img4">
+            <img src="https://cdn.discordapp.com/attachments/803713988382294056/860649027430121486/PNG_image_14.PNG" height="250" width="250">
+        </div>
+
+        <div data-aos="fade-right" class="title5">
+            <p id="Clubmat"><b>Participación en el club de matemáticas:</b></p>
+            <p align="justify" id="Explainclubmat">Entre 2017 y 2020 participé activamente en el club de matemáticas del colegio Mas Camarena, dirigio por Luisa Cuadrado. En este, desarrollé un gusto por las matemáticas, así como una mayor profundización de mis conocimientos en esta, mejorando mis calificaciones. Además, mediante este, participé en toda una serie de competiciones matemáticas, tales como "<a href="https://www.estalmat.org/">Estalmat</a>" o "<a href="https://www.cangur.org/">Cangur</a>", las cuales me permitieron mejorar mi razonamiento lógico.</p>
+        </div>
+        <div data-aos="fade-left" class="img5">
+            <img src="https://cdn.discordapp.com/attachments/803713988382294056/860803017178480651/unnamed_3.png" height="250" width="250">
+		</div>
+
+    </div>
+
+	<!-- WRO, Esque+K, Translation work for RiiConnect, Design for Dolphin Emulator-->
+</div>
+
+
+<div data-aos="fade-up" class="educa">
+	<h1 id="Educa">Formación:</h1>
+	<div data-aos="fade-right" class="loca1">
+		<p id="masca"><b>Complejo Educativo Mas Camarena</b></p>
+		<p id="Explainmasca">Septiembre 2009 - Actualidad <br>(Alumno del centro)</p>
+	</div>
+	<div data-aos="fade-right" class="imgloca1">
+		<img src="https://cdn.discordapp.com/attachments/803713988382294056/860649037275201586/PNG_image_16.PNG" height="100" width="100">
+	</div>
+
+	<div data-aos="fade-right" class="loca2">
+		<p id="dsv"><b>Colegio Alemán de Valencia</b></p>
+		<p id="Explaindsv">Octubre 2014 - Junio 2020 <br>(Alumno de la extraescolar de Alemán)</p>
+	</div>
+	<div data-aos="fade-right" class="imgloca2">
+		<img src="https://cdn.discordapp.com/attachments/803713988382294056/860649014654402570/PNG_image_17.PNG" height="100" width="100">
+	</div>
+
+	<div data-aos="fade-right" class="loca3">
+		<p id="droide"><b>Droide</b></p>
+		<p id="Explaindroide">Diciembre 2015 - Junio 2018 <br>(Participante en competiciones de robótica)</p>
+	</div>
+	<div data-aos="fade-right" class="imgloca3">
+		<img src="https://cdn.discordapp.com/attachments/803713988382294056/860649038029389894/PNG_image_15.PNG" height="100" width="100">
+	</div>
+
+	<!-- Mas Camarena, Droide, DSV -->
+
+</div>
+
+</br></br></br></br></br>
+
+<div data-aos="fade-up" class="opinion">
+	<h1 id="Opinion">Referencias:</h1>
+	<div class="opin">
+		<div data-aos="zoom-in"> <img id="Opin" src="https://cdn.discordapp.com/attachments/803713988382294056/860650929816993862/PNG_image_19.PNG" height="73" width="1400" class="center"> </div>
+		<div data-aos="zoom-in"> <img id="Opin" src="https://cdn.discordapp.com/attachments/803713988382294056/860650955779604510/PNG_image_20.PNG" height="73" width="1400" class="center"> </div>
+	</div>
+</div>
+
+<div class="links">
+    <h1 id="lovemsg"> <br>Made w/ ❤ by Alejandro González<br></h1>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+    </body>
+</html>
